@@ -1,4 +1,4 @@
 dynamic-inject
 ==============
 
-Aplicação de exemplo para injeção dinâmica
+Aplicação de exemplo para injeção dinâmica com CDI
