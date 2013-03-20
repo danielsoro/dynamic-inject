@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/WEB-INF/template/local.xhtml">
+	<ui:define name="content">
+		<h:form>
+			<h:messages />
+			<h:selectOneMenu value="#{helloController.pessoa}">
+				<f:selectItems value="#{helloController.pessoas}" var="pessoa"
+					itemValue="#{pessoa}" itemLabel="#{pessoa}" />
+			</h:selectOneMenu>
+			<h:commandButton value="Diga Olá"
+				action="#{helloController.addHello}">
+				<f:ajax render="txtOla" />
+			</h:commandButton>
+			<h:outputText id="txtOla" value="#{helloController.showHello()}" />
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>
