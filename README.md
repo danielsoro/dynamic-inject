@@ -70,7 +70,7 @@ private Hello hello;
 ```
 
 E a mágica funciona assim:
-Quando eu seleciono um valor no combo e preciono o botão é executando o seguinte código é executado:
+Quando eu seleciono um valor no combo e presiono o botão o seguinte código é executado:
 
 ```
 public void addHello() {
