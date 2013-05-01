@@ -1,6 +1,6 @@
 dynamic-inject
 ==============
-Simple aplicação que tenta demostrar como você pode fazer injeção dinâmica com CDI com utilização de Qualifier. :-)
+Simples aplicação que tenta demostrar como você pode fazer injeção dinâmica com CDI com utilização de Qualifier. :-)
 
 Qualifier
 ==========
@@ -38,7 +38,7 @@ com.github.danielsoro.dynamicinject.qualifier.LuizVictor
 com.github.danielsoro.dynamicinject.qualifier.Sandra
 ```
 
-E temos os nossos annotationLiteral, que nada mais é que uma classe que extende de AnnotationLiteral<T> e implementa
+E temos os nossos annotationLiteral, que nada mais é que uma classe que estende de AnnotationLiteral<T> e implementa
 o qualifier que eu passo no generic:
 
 ```
@@ -52,7 +52,7 @@ com.github.danielsoro.dynamicinject.annotationLiteral.SandraQualifier
 UTILIZANDO
 =============
 
-Fiz uma página JSF e criei um enum chamado Pessoas que possui uma intância de cada AnnotationLiteral:
+Fiz uma página JSF e criei um enum chamado Pessoas que possui uma instância de cada AnnotationLiteral:
 com.github.danielsoro.dynamicinject.enums.Pessoas
 
 Na minha tela pego todos os valores do enum:
@@ -77,6 +77,11 @@ public void addHello() {
     this.hello = this.helloSource.select(pessoa.getAnnotation()).get();
 } 
 ```
-Neste momento eu estou dizendo que a interface Hello terá a implementação contina na opção que ele fez ao escolher na combo.
+Neste momento eu estou dizendo que a interface Hello terá a implementação contida na opção que ele fez ao escolher na combo.
 
 Tente rodar e veja como isso é mágico. :-)
+
+
+-- 
+Daniel Cunha <danielsoro@gmail.com>
+http://danielsoro.github.io/
