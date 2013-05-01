@@ -62,18 +62,20 @@ private List<Pessoas> pessoas = Arrays.asList(Pessoas.values());
 ```
 
 Defino a interface e o Instance desta forma:
-       ``` 
-        @Inject @Any
-	private Instance<Hello> helloSource;
-	private Hello hello;
 
+``` 
+@Inject @Any
+private Instance<Hello> helloSource;
+private Hello hello;
 ```
+
 E a mágica funciona assim:
 Quando eu seleciono um valor no combo e preciono o botão é executando o seguinte código é executado:
+
 ```
-	public void addHello() {
-		this.hello = this.helloSource.select(pessoa.getAnnotation()).get();
-	} 
+public void addHello() {
+    this.hello = this.helloSource.select(pessoa.getAnnotation()).get();
+} 
 ```
 Neste momento eu estou dizendo que a interface Hello terá a implementação contina na opção que ele fez ao escolher na combo.
 
