@@ -83,7 +83,7 @@ Tente rodar e veja como isso é mágico. :-)
 
 
 -- 
-Daniel Cunha <danielsoro@gmail.com> - http://www.danielsoro.com.br/
+Daniel Cunha (soro) <danielsoro@gmail.com>
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/danielsoro/dynamic-inject/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
